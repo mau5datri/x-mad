@@ -86,6 +86,27 @@
 
  
 </menu>
+/* After this line (under everything as a comment), is duplicate content and produces several errors: 
+
+---Error----
+
+Warning: simplexml_load_file (): menu.xml: 89: parser error: Extra content at the end of the document in C: \ server \ data \ localweb \ Find \ functions.php on line 14 
+
+Warning: simplexml_load_file (): ======= in C: \ server \ data \ localweb \ Find \ functions.php on line 14 
+
+Warning: simplexml_load_file (): ^ in C: \ server \ data \ localweb \ Find \ functions.php on line 14 
+
+Fatal error: Call to a member function children () on a non-object in C: \ server \ data \ localweb \ Find \ functions.php on line 15 
+
+---Easy solution--
+
+Because of these errors, the script does not work. The solution is to remove these extra lines (which are in the comments) and worked perfectly. 
+
+Thanks John for your amazing work, and thanks for sharing it publicly. I really appreciate it, greetings, mau5datri@gmail.com
+
+(Sorry for my English, I'm Spanish and google translate gave me a big hand haha!)
+
+--------------EXTRA CONTENT-----
 =======
 
 <menu>
@@ -261,3 +282,4 @@
 </menu>
 
 >>>>>>> bccf92e57b4da3adf1814da8017edcd6f573599b
+*/
